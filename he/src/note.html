@@ -1,0 +1,52 @@
+<!-- template模板中永远操作的是本地data中的数据
+
+父传子：
+	父级的数据传递到子级中，父级和子级是嵌套关系
+	父级将数据以属性的方式传递到子级
+	子级用props接收
+	加：则传什么类型的数据子级就接收什么类型的数据
+	不加：，则以字符串的方式进行接收
+子传父：
+	子级中的数据传递到父级中，子级中用$emit()发送
+
+	$emit()：是vue实例下面的方法
+
+	父级中绑定子级组件的发送监听函数事件，相当于click
+	事件，绑定的事件函数是父级组件中的监听响应函数
+
+	eventBus:是中间转换器，思想来源于JAVA
+	
+	$emit():只负责发送数据，接收两个参数，分别是发送数		  据的监听函数
+			第二个是需要发送的数据
+	$on():只负责接收数据，只有在同级组件中传递数据时，		才用到
+	$off():当数据发送完成后，立即释放(销毁)			   当前接收数据的监听函数
+
+	页面销毁前可以发送数据 
+		可以发送数据
+		  beforeDestroy、
+		  destroyed 
+	页面挂载前可以接受数据
+	    可以接受数据 
+		  beforeCreate、
+		  created、
+		  beforeMount -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+</head>
+<body>
+	
+</body>
+<script>
+  function aa(name){
+     this.name=name;
+  }
+  var a=new aa("刘巍");
+  var b=new aa("刘巍");
+  console.log(a.name===b.name)
+</script>
+</html>		  
