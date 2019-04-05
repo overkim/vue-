@@ -1,0 +1,2 @@
+webpackJsonp([5],{Rpln:function(t,e){},lTUX:function(t,e,a){"use strict";Object.defineProperty(e,"__esModule",{value:!0});var n={name:"car",components:{tou:a("ABb4").a},methods:{}},s={render:function(){var t=this.$createElement,e=this._self._c||t;return e("div",{staticClass:"car"},[e("tou",{attrs:{back:!0}},[this._v("购物车")]),this._v(" "),e("div",{staticClass:"kong"}),this._v(" "),e("label")],1)},staticRenderFns:[]};var c=a("VU/8")(n,s,!1,function(t){a("Rpln")},"data-v-cad81d4a",null);e.default=c.exports}});
+//# sourceMappingURL=5.d3aa1e2cde687d31b7ce.js.map
